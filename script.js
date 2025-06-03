@@ -76,17 +76,14 @@ function atualizarLinksRespostas() {
             links.forEach(link => {
                 const item = document.createElement('li');
                 const linkElement = document.createElement('a');
-                const breakElement1 = document.createElement('br');
-                const breakElement2 = document.createElement('br');
                 linkElement.href = link;
                 linkElement.textContent = link;
                 linkElement.target = '_blank'; // Open in new tab
                 linkElement.style.color = '#0066cc';
+                item.style.marginBottom = '32px';
                 linkElement.style.textDecoration = 'underline';
 
-                item.appendChild(breakElement1);
                 item.appendChild(linkElement);
-                item.appendChild(breakElement2);
                 lista.appendChild(item);
             });
 
