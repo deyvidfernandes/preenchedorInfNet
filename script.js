@@ -84,8 +84,8 @@ function atualizarLinksRespostas() {
                 linkElement.style.color = '#0066cc';
                 linkElement.style.textDecoration = 'underline';
 
-                item.appendChild(linkElement);
                 item.appendChild(breakElement1);
+                item.appendChild(linkElement);
                 item.appendChild(breakElement2);
                 lista.appendChild(item);
             });
