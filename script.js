@@ -76,6 +76,7 @@ function atualizarLinksRespostas() {
             links.forEach(link => {
                 const item = document.createElement('li');
                 const linkElement = document.createElement('a');
+                const breakElement = document.createElement('br');
                 linkElement.href = link;
                 linkElement.textContent = link;
                 linkElement.target = '_blank'; // Open in new tab
@@ -83,6 +84,7 @@ function atualizarLinksRespostas() {
                 linkElement.style.textDecoration = 'underline';
 
                 item.appendChild(linkElement);
+                item.appendChild(breakElement);
                 lista.appendChild(item);
             });
 
