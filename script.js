@@ -85,6 +85,7 @@ function atualizarLinksRespostas() {
 
                 item.appendChild(linkElement);
                 item.appendChild(breakElement);
+                item.appendChild(breakElement);
                 lista.appendChild(item);
             });
 
